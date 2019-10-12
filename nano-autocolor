@@ -1,5 +1,5 @@
 #!/bin/bash
-read -p $'Do you want to overwrite ~/.nanorc ? Y/N\nWarning, you might end up with duplicate "include" otherwise.\n' -n 1
+read -p $'Do you want to overwrite ~/.nanorc ? Y/N\nWarning, you might end up with duplicate "include" or break your config otherwise.\n' -n 1
 echo;echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then rm $HOME/.nanorc; fi
 for file in /usr/share/nano/*.nanorc;
